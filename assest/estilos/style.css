@@ -1,8 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  background-color: #e4e4e4;
 }
 
 .wrap {
@@ -25,6 +30,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  overflow: scroll;
 }
 
 .wrap .perfil-portifolio.active {
@@ -37,6 +43,7 @@
   height: 80px;
   -o-object-fit: cover;
      object-fit: cover;
+  margin-top: 2em;
 }
 
 .wrap .perfil-portifolio .perfil-photos h2 {
@@ -146,4 +153,61 @@
   color: #d3d3d3;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+}
+
+#profile-content .about-im {
+  margin-left: 0.9em;
+  margin-top: 2em;
+}
+
+#profile-content .about-im h2 {
+  font-size: clamp(0.5em, 6vw, 0.8em);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #9c9c9c;
+}
+
+#profile-content .about-im h3 {
+  font-size: clamp(0.5em, 8vw, 1.2em);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-top: 0.3em;
+}
+
+#profile-content .about-im p {
+  font-size: clamp(0.5em, 8vw, 1em);
+  letter-spacing: 1.5px;
+  margin-top: 0.8em;
+}
+
+#profile-content .skills {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.4em;
+  margin: 1.6em 0.9em;
+}
+
+#profile-content .skills .card-container {
+  background-color: white;
+  padding: 1.3em 1.6em 4em 1.4em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+  border-bottom: 2px solid rgb(124, 185, 212);
+}
+
+#profile-content .skills .card-container.grid2 {
+  border-bottom: 2px solid rgb(212, 124, 190);
+}
+
+#profile-content .skills .card-container.grid3 {
+  border-bottom: 2px solid rgb(99, 182, 143);
+}
+
+#profile-content .skills .card-container.grid4 {
+  border-bottom: 2px solid rgb(214, 194, 80);
+}
+
+#profile-content .skills .card-container .icon img {
+  width: 40px;
 }/*# sourceMappingURL=style.css.map */
