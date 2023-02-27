@@ -16,7 +16,11 @@ img {
 .wrap .perfil-portifolio {
   background-color: #f0f0f0;
   position: fixed;
-  transform: translateX(0);
+  transform: translateX(-100%);
+  z-index: 3;
+  width: 450px;
+  height: 100%;
+  text-align: center;
 }
 
 .wrap .hero-banner {
