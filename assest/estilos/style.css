@@ -16,7 +16,7 @@ body {
 
 .wrap .perfil-portifolio {
   background-color: rgba(255, 255, 255, 0.5882352941);
-  position: fixed;
+  position: absolute;
   transform: translateX(-100%);
   z-index: 4;
   text-align: center;
@@ -43,12 +43,20 @@ body {
   height: 80px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-top: 2em;
+  margin-top: 5em;
 }
 
 .wrap .perfil-portifolio .perfil-photos h2 {
-  font-size: clamp(0.9em, 8vw, 1.5em);
+  font-size: clamp(0.6em, 8vw, 1.2em);
   text-transform: capitalize;
+}
+
+.wrap .perfil-portifolio .footer-perfil {
+  margin-top: 0.7em;
+}
+
+.wrap .perfil-portifolio .footer-perfil p {
+  font-size: clamp(0.8em, 8vw, 0.7em);
 }
 
 .wrap .perfil-portifolio .bar-navgation .perfil-itens-menu {
@@ -56,11 +64,12 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.2em;
+  margin-top: 0.9em;
 }
 
 .wrap .perfil-portifolio .bar-navgation .perfil-itens-menu li a {
   text-decoration: none;
-  font-size: clamp(1em, 8vw, 0.9em);
+  font-size: clamp(0.9em, 8vw, 0.9em);
   text-transform: uppercase;
   color: rgb(54, 54, 54);
 }
@@ -189,7 +198,7 @@ body {
 
 #profile-content .skills .card-container {
   background-color: white;
-  padding: 1.3em 1.6em 4em 1.4em;
+  padding: 1.3em 1.6em 2.5em 1.4em;
   display: flex;
   flex-direction: column;
   gap: 1.2em;
@@ -209,5 +218,5 @@ body {
 }
 
 #profile-content .skills .card-container .icon img {
-  width: 40px;
+  width: 30px;
 }/*# sourceMappingURL=style.css.map */
