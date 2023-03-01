@@ -16,7 +16,7 @@ body.over{
     display: flex;
 }
 .wrap .perfil-portifolio{
-    background-color: #ffffff96;
+    background-color: #e6e6e66e;
     position: absolute;
     transform: translateX(-100%);
     z-index: 4;
@@ -39,7 +39,6 @@ body.over{
     width: 80px;
     height: 80px;
     object-fit: cover;
-    margin-top: 5em;
 }
 .wrap .perfil-portifolio .perfil-photos h2{
     font-size: clamp(.60em,8vw,1.2em);
@@ -100,6 +99,7 @@ body.over{
     position: absolute;
     transition: all .3s ease-in-out;
     margin: 10px;
+    cursor: pointer;
 }
 .wrap .burguer::before{
     width: 25px;
@@ -109,6 +109,7 @@ body.over{
     position: absolute;
     transition: all .3s ease-in-out;
     margin: 10px;
+    cursor: pointer;
 }
 .wrap .burguer::after{
     content: '';

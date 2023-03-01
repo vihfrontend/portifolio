@@ -20,7 +20,7 @@ body.over {
 }
 
 .wrap .perfil-portifolio {
-  background-color: rgba(255, 255, 255, 0.5882352941);
+  background-color: rgba(230, 230, 230, 0.431372549);
   position: absolute;
   transform: translateX(-100%);
   z-index: 4;
@@ -47,7 +47,6 @@ body.over {
   height: 80px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-top: 5em;
 }
 
 .wrap .perfil-portifolio .perfil-photos h2 {
@@ -116,6 +115,7 @@ body.over {
   position: absolute;
   transition: all 0.3s ease-in-out;
   margin: 10px;
+  cursor: pointer;
 }
 
 .wrap .burguer::before {
@@ -126,6 +126,7 @@ body.over {
   position: absolute;
   transition: all 0.3s ease-in-out;
   margin: 10px;
+  cursor: pointer;
 }
 
 .wrap .burguer::after {
