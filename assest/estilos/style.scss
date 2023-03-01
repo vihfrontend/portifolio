@@ -7,6 +7,10 @@
 }
 body{
     background-color: #e4e4e4;
+    overflow:initial;
+}
+body.over{
+    overflow: hidden;
 }
 .wrap{
     display: flex;
@@ -25,8 +29,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    overflow: scroll;
+    justify-content: center;
 }
 .wrap .perfil-portifolio.active{
    transform: translateX(0);

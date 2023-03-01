@@ -8,5 +8,6 @@
         perfil.classList.toggle('active');
         blur.classList.toggle('blur')
         menuBurgue.classList.toggle('background')
+        document.body.classList.toggle('over')
     })
 })();
