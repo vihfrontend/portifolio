@@ -9,15 +9,12 @@ body{
     background-color: #e4e4e4;
     overflow:initial;
 }
-body.over{
-    overflow: hidden;
-}
 .wrap{
     display: flex;
 }
 .wrap .perfil-portifolio{
     background-color: #e6e6e66e;
-    position: absolute;
+    position: fixed;
     transform: translateX(-100%);
     z-index: 4;
     text-align: center;
@@ -43,6 +40,13 @@ body.over{
 .wrap .perfil-portifolio .perfil-photos h2{
     font-size: clamp(.60em,8vw,1.2em);
     text-transform: capitalize;
+    background-color: rgb(79, 155, 199);
+}
+.wrap .perfil-portifolio .perfil-photos h4{
+    font-size: clamp(.60em,8vw,.7em);
+    text-transform: capitalize;
+    background-color: rgb(55, 111, 143);
+    margin-top: 8px;
 }
 .wrap .perfil-portifolio .footer-perfil{
     margin-top: .70em;
@@ -90,6 +94,7 @@ body.over{
     flex-direction: column;
     gap: .50em;
     cursor: pointer;
+    padding: 10px;
 }
 .wrap .burguer::after{
     width: 25px;
@@ -171,7 +176,7 @@ body.over{
 }
 #profile-content .skills {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     gap: 1.4em;
     margin: 1.6em .90em;
 }
