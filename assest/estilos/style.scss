@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -201,3 +202,33 @@ body{
 #profile-content .skills .card-container .icon img{
     width: 30px;
 }
+
+
+#profile-content .card-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    padding: 1.2em 0 1.4em 1.4em;
+
+}
+#profile-content .card-container .card img{
+    width: 100%;
+}
+#profile-content .card-container .card{
+    margin-bottom: 1.6em;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1.2em;
+    background-color: #f0f0f0;
+}
+#profile-content .card-container .card a{
+    padding: .70em .40em;
+    background-color: rgb(87, 160, 194);
+    text-decoration: none;
+    color: white;
+    // display: block;
+    // width: 45%;
+    margin: .90em 0;
+    display: flex;
+    width: 30%;
+;}
