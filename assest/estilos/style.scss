@@ -82,6 +82,7 @@ body{
     position: relative;
     filter: blur(0px);
     transition: all .3s ease-in-out;
+    background-attachment: fixed;
 }
 .wrap .hero-banner.blur{
     filter: blur(8px);
@@ -204,31 +205,39 @@ body{
 }
 
 
-#profile-content .card-container{
-    width: 100%;
+#profile-content .cards-container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-    padding: 1.2em 0 1.4em 1.4em;
+    gap: 1.2em;
+    margin: 0 1.2em;
 
 }
-#profile-content .card-container .card img{
+#profile-content .cards-container .card img{
     width: 100%;
 }
-#profile-content .card-container .card{
+#profile-content .cards-container .card h5{
+    margin: .90em .70em;
+}
+#profile-content .cards-container .card p{
+    margin: .90em .70em;
+}
+#profile-content .cards-container .card{
     margin-bottom: 1.6em;
     display: flex;
     flex-direction: column;
-    margin-right: 1.2em;
     background-color: #f0f0f0;
+    height: 100%;
+    margin-top: 12px;
 }
-#profile-content .card-container .card a{
-    padding: .70em .40em;
+#profile-content .cards-container .card a{
+    padding: .70em .90em;
     background-color: rgb(87, 160, 194);
     text-decoration: none;
     color: white;
     // display: block;
     // width: 45%;
-    margin: .90em 0;
-    display: flex;
-    width: 30%;
+    margin: .90em .70em;
+    display: inline;
+    text-transform: uppercase;
+    font-size: clamp(.90em,8vw,.3em);
 ;}
