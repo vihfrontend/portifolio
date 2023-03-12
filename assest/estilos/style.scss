@@ -13,17 +13,22 @@ body{
 .wrap{
     display: flex;
 }
-
+.fixed{
+    position: fixed;
+}
 .perfil-portfolio{
     display: flex;
     position: relative;
     height: 8vh;
+    background-color: #f0f0f0;
+    width: 100vw;
 }
 .perfil-portfolio .burguer{
     max-width: 40px;
     width: 100%;
     padding: .70em 0;
     margin: 0 12px;
+    position: fixed;
 }
 .perfil-portfolio .burguer span{
     width: 100%;
@@ -39,15 +44,36 @@ body{
     position: absolute;
     left: 0;
     top: 8vh;
-    width: 100%;
+    width: 100vw;
     background-color: #f0f0f0;
     height: 0;
     overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+.perfil-portfolio .bar-navgation.openMenu{
+    overflow: initial;
+    height: 40vh;
 }
 .perfil-portfolio .bar-navgation .perfil-itens-menu{
     display: flex;
     list-style: none;
     flex-direction: column;
+    margin: 0 12px;
+    padding: 12px 0;
+    gap: 15px;
+}
+.perfil-portfolio .bar-navgation .perfil-itens-menu li a{
+    font-size: clamp(1.2em, 6vw, 1.4em);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #030303;
+}
+.hero-banner{
+    background-image: url('../image/retrato-de-jovem-usando-maquiagem-e-roupas-elegantes.jpg');
+    background-position: bottom center;
+    background-size: cover;
+    min-height: 100vh;
 }
 
 #profile-content .about-im{
@@ -73,7 +99,7 @@ body{
 }
 #profile-content .skills {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(1fr,1fr));
     gap: 1.4em;
     margin: 1.6em .90em;
 }
