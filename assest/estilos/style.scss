@@ -44,7 +44,7 @@ body{
     position: absolute;
     left: 0;
     top: 8vh;
-    width: 100vw;
+    width: 100%;
     background-color: #f0f0f0;
     height: 0;
     overflow: hidden;
@@ -70,10 +70,37 @@ body{
     color: #030303;
 }
 .hero-banner{
-    background-image: url('../image/retrato-de-jovem-usando-maquiagem-e-roupas-elegantes.jpg');
+    display: flex;
+    background-image: linear-gradient(45deg,rgba(0, 0, 0, 0.425),rgba(0, 0, 0, 0.425)),url('../image/retrato-de-jovem-usando-maquiagem-e-roupas-elegantes.jpg');
     background-position: bottom center;
     background-size: cover;
     min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-attachment: fixed;
+}
+.hero-banner .hero-text h1{
+    color: white;
+}
+.hero-banner .hero-text h1 span{
+    color: rgb(98, 163, 189);
+}
+.hero-banner .hero-text p{
+    color: white;
+}
+
+.hero-banner .hero-text .download{
+    padding: .70em 1.40em;
+    background-color: transparent;
+    margin-top: 20px;
+    border: 1px solid white;
+}
+
+.hero-banner .hero-text .download a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 #profile-content .about-im{
@@ -128,7 +155,6 @@ body{
 
 #profile-content .cards-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
     gap: 1.2em;
     margin: 0 1.2em;
 
