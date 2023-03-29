@@ -7,11 +7,12 @@
 }
 
 :root {
-  --bg-prymary: #03001C;
+  --bg-prymary: #1f1d1d;
   --text-prymary:#F2EBE9;
-  --card-color: #393053;
+  --card-color: #333333;
   --card-hs: #FEF5AC;
   --card-button: #F7C04A;
+  --color-logo: #87aee2;
 }
 
 body {
@@ -19,10 +20,112 @@ body {
   overflow: initial;
 }
 
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-prymary);
+  position: fixed;
+  height: 70px;
+  padding: 0 10px;
+}
+
+.container .logo a {
+  color: var(--color-logo);
+  font-size: clamp(1.4em, 8vw, 1.6em);
+  text-decoration: none;
+}
+
+.container .menu-burguer {
+  border: none;
+  padding: 0.3em;
+  font-size: 1.2em;
+  display: flex;
+  background-color: transparent;
+  cursor: pointer;
+  gap: 8px;
+  align-items: center;
+  color: white;
+}
+
+.container .menu-burguer .icon {
+  border-top: 2px solid var(--color-logo);
+  width: 20px;
+  color: var(--color-logo);
+  transition: all 0.3s ease-in-out;
+}
+
+.container .menu-burguer .icon::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: currentColor;
+  margin: 5px 0;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.container .menu-burguer .icon::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: currentColor;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.container .menu-burguer .icon.rotate {
+  border-color: transparent;
+  margin-bottom: 8px;
+}
+
+.container .menu-burguer .icon.rotate::after {
+  transform: rotate(-135deg);
+}
+
+.container .menu-burguer .icon.rotate::before {
+  transform: rotate(135deg);
+  top: 7px;
+}
+
 .container .navbar {
   width: 100%;
-  background-color: var(--text-prymary);
+  background-color: var(--bg-prymary);
   height: 100%;
+  position: absolute;
+  top: 70px;
+  height: 0;
+  overflow-y: hidden;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.container .navbar.active {
+  height: calc(60vh - 70px);
+  overflow-y: auto;
+}
+
+.container .navbar .case-itens {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.container .navbar .case-itens li {
+  margin-bottom: 0.8em;
+}
+
+.container .navbar .case-itens li a {
+  color: var(--text-prymary);
+  text-decoration: none;
+  padding: 0.9em 0;
+  margin: 1.2em 0;
+  font-size: clamp(1.8em, 8vw, 2em);
+  text-transform: capitalize;
 }
 
 .hero-banner {

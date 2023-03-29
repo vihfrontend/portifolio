@@ -1,10 +1,10 @@
-(()=>{
+const btn = document.querySelector('.menu-burguer');
 
-    let menuBurgue = document.querySelector('.burguer');
-    menuBurgue.addEventListener('click',()=>{
-        let nav = document.querySelector('.bar-navgation');
-        menuBurgue.classList.toggle('open');
+let tooglemenu = ()=>{
+    let navbar = document.querySelector(".navbar");
+    navbar.classList.toggle('active');
+    let icon = document.querySelector('.icon');
+    icon.classList.toggle('rotate')
+}
 
-        nav.classList.toggle('openMenu')
-    })
-})();
+btn.addEventListener('click',tooglemenu)
