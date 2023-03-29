@@ -79,16 +79,15 @@ body {
 
 .container .menu-burguer .icon.rotate {
   border-color: transparent;
-  margin-bottom: 8px;
 }
 
 .container .menu-burguer .icon.rotate::after {
   transform: rotate(-135deg);
+  top: -7px;
 }
 
 .container .menu-burguer .icon.rotate::before {
   transform: rotate(135deg);
-  top: 7px;
 }
 
 .container .navbar {
