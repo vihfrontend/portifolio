@@ -192,19 +192,27 @@ body {
 }
 
 #profile-content .skills {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
-  gap: 1.4em;
-  margin: 1.6em 0.9em;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 8px 15px;
 }
 
 #profile-content .skills .card-container {
-  background-color: white;
-  padding: 1.3em 1.6em 2.5em 1.4em;
   display: flex;
   flex-direction: column;
+  background-color: #9c9c9c;
+  padding: 0.7em;
   gap: 1.2em;
   border-bottom: 2px solid rgb(124, 185, 212);
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+#profile-content .skills .card-container h3 {
+  font-size: clamp(0.7em, 8vw, 1.2em);
 }
 
 #profile-content .skills .card-container.grid2 {
@@ -219,8 +227,18 @@ body {
   border-bottom: 2px solid rgb(214, 194, 80);
 }
 
+#profile-content .skills .card-container .icon {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+#profile-content .skills .card-container.grid3 .icon img {
+  width: 40px;
+}
+
 #profile-content .skills .card-container .icon img {
-  width: 30px;
+  width: 100%;
+  height: 100%;
 }
 
 #profile-content .cards-container {
