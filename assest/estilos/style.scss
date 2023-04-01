@@ -20,6 +20,9 @@ body{
     background-color: var(--bg-prymary);
     overflow:initial;
 }
+.front{
+    color: var(--color-logo);
+}
 .container{
     display: flex;
     width: 100%;
@@ -95,36 +98,41 @@ body{
     transition: all .3s ease-in-out;
 }
 .container .navbar.active{
-    height: calc(60vh - 70px);
+    height: calc(70vh - 70px);
     overflow-y: auto;
 }
 .container .navbar .case-itens{
     display: flex;
     flex-direction: column;
     margin: 0 10px;
-    text-align: center;
 }
 .container .navbar .case-itens li{
     margin-bottom: .80em;
+    margin-top: 20px;
 }
 .container .navbar .case-itens li a{
     color: var(--text-prymary);
     text-decoration: none;
     padding: .90em 0;
     margin: 1.2em 0;
-    font-size: clamp(1.8em,8vw,2em);
+    font-size: clamp(1.4em,8vw,1.5em);
     text-transform: capitalize;
 }
 .hero-banner{
     display: flex;
-    background-image: linear-gradient(45deg,rgba(0, 0, 0, 0.425),rgba(0, 0, 0, 0.425)),url('../image/retrato-de-jovem-usando-maquiagem-e-roupas-elegantes.jpg');
-    background-position: bottom center;
+    background-image: linear-gradient(45deg,rgba(0, 0, 0, 0.425),rgba(0, 0, 0, 0.425)),url('../image/cintura-para-cima-retrato-de-bonito-homem-serio-com-barba-por-fazer-mantem-as-maos-juntas-vestido-com-camisa-azul-escura-tem-conversa-com-o-interlocutor-fica-contra-a-parede-branca-freelancer-homem-autoconfiante.jpg');
+    background-position: top center;
     background-size: cover;
     min-height: 100vh;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
+    flex-direction: column;
+}
+.hero-banner .hero-text{
+    background-color: #1b1b1b70;
+    padding: .80em .70em;
 }
 .hero-banner .hero-text h1{
     color: white;
@@ -136,14 +144,14 @@ body{
     color: white;
 }
 
-.hero-banner .hero-text .download{
+.hero-banner .download{
     padding: .70em 1.40em;
     background-color: transparent;
     margin-top: 20px;
-    border: 1px solid white;
+    border: 1px solid var(--color-logo);
 }
 
-.hero-banner .hero-text .download a{
+.hero-banner  .download a{
     color: white;
     text-decoration: none;
     text-transform: uppercase;
@@ -154,35 +162,46 @@ body{
     margin-top: 2em;
 }
 #profile-content .about-im h2{
+    display: inline-block;
     font-size: clamp(.50em,6vw,.80em);
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #9c9c9c;
+    color: #dadada;
+    background-color: #333333;
+    padding: .80em .50em;
 }
 #profile-content .about-im h3{
     font-size: clamp(.50em,8vw,1.2em);
     text-transform: uppercase;
     letter-spacing: 1.5px;
     margin-top: .3em;
-    color: var(--card-hs)
+    color: var(--color-logo)
 }
 #profile-content .about-im p{
     font-size: clamp(.50em,8vw,1em);
     letter-spacing: 1.5px;
     margin-top: .8em;
     color: var(--text-prymary);
+    line-height: 1.5;
+}
+#profile-content .about-im p a{
+    color: #87aee2;
 }
 #profile-content .skills {
-   display: flex;
-   gap: 8px;
-   flex-wrap: wrap;
-   justify-content: center;
-   margin: 8px 15px;
+//    display: flex;
+//    gap: 8px;
+//    flex-wrap: wrap;
+//    justify-content: center;
+//    margin: 8px 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 8px;
+    margin: 1.2em;
 }
 #profile-content .skills .card-container{
    display: flex;
    flex-direction: column;
-   background-color: #9c9c9c;
+   background-color: #ffffff;
    padding: .70em;
    gap: 1.2em;
    border-bottom: 2px solid rgb(124, 185, 212);
