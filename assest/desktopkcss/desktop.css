@@ -1,0 +1,7 @@
+@media screen and (min-width: 600px) {
+  #profile-content .cards-container .grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.2em;
+  }
+}/*# sourceMappingURL=desktop.css.map */

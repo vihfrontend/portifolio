@@ -24,6 +24,16 @@ body {
   color: var(--color-logo);
 }
 
+.bg-hs {
+  display: inline-block;
+  font-size: clamp(0.5em, 6vw, 0.8em);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #dadada;
+  background-color: #333333;
+  padding: 0.8em 0.5em;
+}
+
 .container {
   display: flex;
   width: 100%;
@@ -210,10 +220,9 @@ body {
 }
 
 #profile-content .skills {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 8px;
   margin: 1.2em;
+  flex-direction: column;
 }
 
 #profile-content .skills .card-container {
@@ -226,6 +235,13 @@ body {
   flex: 1;
   align-items: center;
   justify-content: center;
+}
+
+#profile-content .skills .skill-cads-profiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 8px;
+  margin-top: 0.9em;
 }
 
 #profile-content .skills .card-container h3 {
@@ -259,9 +275,8 @@ body {
 }
 
 #profile-content .cards-container {
-  display: grid;
   gap: 1.2em;
-  margin: 0 1.2em;
+  margin: 0.3em 1.2em;
 }
 
 #profile-content .cards-container .card img {
@@ -283,17 +298,16 @@ body {
   display: flex;
   flex-direction: column;
   background-color: var(--card-color);
-  height: 100%;
-  margin-top: 12px;
+  margin-top: 0.9em;
 }
 
 #profile-content .cards-container .card a {
+  display: inline-block;
   padding: 0.7em 0.9em;
   background-color: var(--card-button);
   text-decoration: none;
   color: white;
   margin: 0.9em 0.7em;
-  display: inline;
   text-transform: uppercase;
   font-size: clamp(0.9em, 8vw, 0.3em);
 }/*# sourceMappingURL=style.css.map */
